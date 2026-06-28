@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Outbound Engine — B2B Services Pitch Deck</title>
+  <style>
+    :root{
+      --ink:#0e1714;
+      --muted:#5d6b65;
+      --paper:#f5efe3;
+      --paper-2:#fffaf0;
+      --green:#164236;
+      --green-2:#215a49;
+      --lime:#c8ff55;
+      --amber:#ffbf45;
+      --red:#e85d4f;
+      --line:rgba(14,23,20,.16);
+      --shadow:0 26px 70px rgba(16,32,26,.24);
+      --radius:28px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      overflow:hidden;
+      color:var(--ink);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 12% 12%, rgba(200,255,85,.34), transparent 26%),
+        radial-gradient(circle at 84% 8%, rgba(255,191,69,.24), transparent 25%),
+        linear-gradient(135deg,#102018 0%,#244f42 46%,#0b1511 100%);
+    }
+
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      opacity:.18;
+      background-image:
+        linear-gradient(90deg, rgba(255,255,255,.7) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,.7) 1px, transparent 1px);
+      background-size:42px 42px;
+      mask-image:radial-gradient(circle at center, black, transparent 72%);
+    }
+
+    .deck-shell{height:100vh; display:grid; grid-template-rows:1fr auto; padding:26px; gap:16px}
+    .viewport{position:relative; min-height:0; display:grid; place-items:center}
+
+    .slide{
+      position:absolute;
+      width:min(1180px, calc(100vw - 52px));
+      height:min(665px, calc(100vh - 138px));
+      min-height:min(560px, calc(100vh - 138px));
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.74), rgba(255,250,240,.95)),
+        var(--paper);
+      border:1px solid rgba(255,255,255,.55);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:44px 52px;
+      display:none;
+      overflow:hidden;
+      isolation:isolate;
+    }
+    .slide.active{display:block; animation:enter .38s ease-out both}
+    @keyframes enter{from{opacity:0; transform:translateY(18px) scale(.985)} to{opacity:1; transform:translateY(0) scale(1)}}
+
+    .slide::after{
+      content:attr(data-slide);
+      position:absolute; right:34px; bottom:26px;
+      color:rgba(14,23,20,.18);
+      font:700 72px/1 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing:-.08em;
+      z-index:-1;
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:9px;
+      padding:8px 12px;
+      border:1px solid rgba(22,66,54,.22);
+      border-radius:999px;
+      color:var(--green);
+      background:rgba(200,255,85,.18);
+      font:800 12px/1 ui-sans-serif, system-ui, sans-serif;
+      text-transform:uppercase; letter-spacing:.14em;
+    }
+    .kicker::before{content:""; width:8px; height:8px; border-radius:99px; background:var(--lime); box-shadow:0 0 0 4px rgba(200,255,85,.25)}
+    h1,h2,h3,p{margin:0}
+    h1{font-size:76px; line-height:.92; letter-spacing:-.065em; max-width:900px; margin-top:28px}
+    h2{font-size:54px; line-height:.96; letter-spacing:-.052em; max-width:940px; margin-top:22px}
+    h3{font:850 21px/1.08 ui-sans-serif, system-ui, sans-serif; letter-spacing:-.035em}
+    p,.lead,li{font-size:20px; line-height:1.38; color:#263530}
+    .lead{font-size:25px; max-width:840px; margin-top:20px; color:#31433d}
+    .subtle{color:var(--muted)}
+    .big-quote{font-size:34px; line-height:1.08; letter-spacing:-.04em; max-width:970px; margin-top:28px}
+    .highlight{background:linear-gradient(transparent 58%, rgba(200,255,85,.72) 58%)}
+
+    .grid{display:grid; gap:18px; margin-top:30px}
+    .grid.two{grid-template-columns:1fr 1fr}
+    .grid.three{grid-template-columns:repeat(3,1fr)}
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .card{
+      background:rgba(255,255,255,.56);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:0 12px 34px rgba(22,66,54,.08);
+    }
+    .card.dark{background:var(--green); color:white; border-color:rgba(255,255,255,.12)}
+    .card.dark p,.card.dark li{color:rgba(255,255,255,.82)}
+    .card.accent{background:rgba(200,255,85,.20); border-color:rgba(22,66,54,.28)}
+    .num{font:900 34px/.9 ui-sans-serif, system-ui, sans-serif; color:var(--green); letter-spacing:-.06em; margin-bottom:14px}
+    .card.dark .num{color:var(--lime)}
+    ul{padding-left:21px; margin:14px 0 0}
+    li{margin:8px 0}
+
+    .split{display:grid; grid-template-columns:1.04fr .96fr; gap:32px; align-items:center; height:100%}
+    .metric-row{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px}
+    .metric{border-left:5px solid var(--green); padding:16px 16px; background:rgba(255,255,255,.54); border-radius:18px}
+    .metric b{display:block; font:900 31px/.95 ui-sans-serif, system-ui, sans-serif; letter-spacing:-.06em; color:var(--green)}
+    .metric span{display:block; margin-top:8px; color:var(--muted); font:700 13px/1.25 ui-sans-serif, system-ui, sans-serif; text-transform:uppercase; letter-spacing:.09em}
+
+    .process{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:34px; position:relative}
+    .process::before{content:""; position:absolute; left:7%; right:7%; top:38px; height:2px; background:rgba(22,66,54,.22); z-index:-1}
+    .step{background:rgba(255,255,255,.70); border:1px solid var(--line); border-radius:22px; padding:20px; min-height:265px}
+    .dot{width:74px; height:74px; border-radius:50%; display:grid; place-items:center; background:var(--green); color:var(--lime); font:900 27px/1 ui-sans-serif, system-ui, sans-serif; margin-bottom:18px; box-shadow:0 0 0 8px var(--paper)}
+
+    table{width:100%; border-collapse:separate; border-spacing:0; margin-top:28px; font:16px/1.25 ui-sans-serif, system-ui, sans-serif; overflow:hidden; border-radius:22px; box-shadow:0 0 0 1px var(--line)}
+    th,td{padding:14px 16px; text-align:left; vertical-align:top; border-bottom:1px solid rgba(14,23,20,.10); background:rgba(255,255,255,.55)}
+    th{background:var(--green); color:white; font-size:14px; text-transform:uppercase; letter-spacing:.08em}
+    td:first-child{font-weight:850; color:var(--green)}
+    tr:last-child td{border-bottom:none}
+    .price{font:950 31px/.9 ui-sans-serif, system-ui, sans-serif; letter-spacing:-.06em; color:var(--ink)}
+    .tag{display:inline-block; padding:5px 9px; border-radius:999px; background:rgba(255,191,69,.25); color:#6b3e00; font:800 11px/1 ui-sans-serif, system-ui, sans-serif; text-transform:uppercase; letter-spacing:.08em; margin-top:8px}
+
+    .timeline{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:30px}
+    .week{background:rgba(255,255,255,.62); border:1px solid var(--line); border-radius:20px; padding:20px}
+    .week b{display:block; color:var(--green); font:900 13px/1 ui-sans-serif, system-ui, sans-serif; text-transform:uppercase; letter-spacing:.12em; margin-bottom:10px}
+
+    .addons{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:28px}
+    .addon{display:flex; gap:16px; align-items:flex-start; padding:18px; border-radius:20px; background:rgba(255,255,255,.58); border:1px solid var(--line)}
+    .addon strong{min-width:120px; color:var(--green); font:950 24px/.9 ui-sans-serif, system-ui, sans-serif; letter-spacing:-.045em}
+    .addon p{font-size:17px}
+
+    .faq{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:24px}
+    details{background:rgba(255,255,255,.62); border:1px solid var(--line); border-radius:18px; padding:16px 18px}
+    summary{cursor:pointer; font:850 17px/1.25 ui-sans-serif, system-ui, sans-serif; color:var(--green)}
+    details p{font-size:16px; margin-top:10px}
+
+    .cta-box{margin-top:34px; background:var(--green); color:white; border-radius:28px; padding:32px; display:grid; grid-template-columns:1.2fr .8fr; gap:24px; align-items:center}
+    .cta-box p{color:rgba(255,255,255,.78)}
+    .button{display:inline-flex; justify-content:center; align-items:center; min-height:58px; border-radius:999px; background:var(--lime); color:var(--green); font:950 16px/1 ui-sans-serif, system-ui, sans-serif; text-transform:uppercase; letter-spacing:.1em; text-decoration:none; padding:0 24px; box-shadow:0 16px 35px rgba(200,255,85,.24)}
+
+    .controls{display:flex; justify-content:center; align-items:center; gap:12px; color:white; font:800 13px/1 ui-sans-serif, system-ui, sans-serif; letter-spacing:.08em; text-transform:uppercase}
+    .controls button{border:1px solid rgba(255,255,255,.28); color:white; background:rgba(255,255,255,.10); border-radius:999px; min-width:112px; height:42px; cursor:pointer; font:inherit; backdrop-filter:blur(12px)}
+    .controls button:hover{background:rgba(200,255,85,.18); border-color:rgba(200,255,85,.55)}
+    .progress{width:min(360px, 30vw); height:8px; border-radius:999px; background:rgba(255,255,255,.16); overflow:hidden}
+    .bar{height:100%; width:0%; background:linear-gradient(90deg,var(--lime),var(--amber)); border-radius:inherit; transition:width .25s ease}
+    .hint{opacity:.72; text-align:center}
+
+    @media (max-height: 720px){
+      .deck-shell{padding:12px; gap:8px}
+      .slide{width:min(1180px, calc(100vw - 24px)); height:calc(100vh - 86px); min-height:0; padding:20px 42px; overflow:auto}
+      h1{font-size:52px}.lead{font-size:18px;margin-top:14px}h2{font-size:36px;margin-top:14px}.big-quote{font-size:25px;margin-top:18px}
+      p,.lead,li{font-size:15px;line-height:1.24}h3{font-size:18px}.kicker{padding:6px 10px;font-size:11px}
+      ul{margin:8px 0 0}li{margin:4px 0}.card{padding:14px;border-radius:18px}.grid{gap:12px;margin-top:18px}.process,.timeline,.addons{margin-top:18px}
+      .metric-row{margin-top:20px}.metric{padding:12px}.metric b{font-size:26px}.metric span{font-size:11px}
+      .step{padding:14px;min-height:215px}.dot{width:56px;height:56px;font-size:22px;margin-bottom:12px}
+      .week{padding:14px}.addon{padding:12px;gap:10px}.addon strong{font-size:20px;min-width:96px}.addon p{font-size:14px}
+      table{font-size:12px;margin-top:18px}th,td{padding:7px 8px}.price{font-size:21px}.tag{font-size:9px;padding:4px 7px}
+      .faq{gap:10px;margin-top:16px}details{padding:11px 13px}summary{font-size:15px}details p{font-size:13px;margin-top:7px}
+      .cta-box{margin-top:20px;padding:24px}.button{min-height:48px;font-size:13px}
+      .slide::after{font-size:48px;bottom:12px}.controls button{height:38px}.progress{height:7px}
+    }
+
+    @media (max-width: 900px){
+      body{overflow:auto}.deck-shell{height:auto; min-height:100vh; padding:14px}.viewport{height:calc(100vh - 82px)}
+      .slide{width:calc(100vw - 28px); height:calc(100vh - 104px); min-height:0; padding:28px; overflow:auto}
+      h1{font-size:48px} h2{font-size:36px}.lead{font-size:20px}.big-quote{font-size:26px}
+      .grid.two,.grid.three,.grid.four,.split,.process,.timeline,.addons,.faq,.cta-box{grid-template-columns:1fr}
+      .process::before{display:none}.metric-row{grid-template-columns:1fr}.controls{gap:7px}.hint{display:none}
+      table{font-size:13px}th,td{padding:10px 9px}.price{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <main class="deck-shell">
+    <section class="viewport" aria-live="polite">
+      <article class="slide active" data-slide="01">
+        <span class="kicker">Your B2B Pipeline System</span>
+        <h1>Build a repeatable outbound engine without hiring a full SDR team.</h1>
+        <p class="lead">We help your team find high-fit accounts, research decision makers, personalize outreach, and turn cold accounts into qualified sales conversations.</p>
+        <div class="metric-row">
+          <div class="metric"><b>14–30 days</b><span>to install your first working outbound system</span></div>
+          <div class="metric"><b>500–1,000</b><span>researched prospects in the core setup</span></div>
+          <div class="metric"><b>3 options</b><span>audit, full buildout, or managed execution</span></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="02">
+        <span class="kicker">Why this matters</span>
+        <h2>Your pipeline should not depend only on referrals, ads, or founder prospecting.</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>What may be slowing you down</h3>
+            <ul>
+              <li>Your best leads are inconsistent month to month.</li>
+              <li>Your sales team needs qualified conversations, not random booked calls.</li>
+              <li>Prospecting takes too long, so personalization gets skipped.</li>
+              <li>Your CRM or lead data is incomplete, outdated, or hard to trust.</li>
+              <li>You may already have outreach tools, but no clear operating system.</li>
+            </ul>
+          </div>
+          <div class="card dark">
+            <h3>The real goal</h3>
+            <p class="big-quote">Give your team a controlled way to create pipeline before the revenue gap becomes urgent.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="03">
+        <span class="kicker">Value proposition</span>
+        <h2>We turn your tools, data, and offer into a pipeline workflow your team can actually use.</h2>
+        <div class="grid three">
+          <div class="card accent"><div class="num">01</div><h3>Sharper targeting</h3><p>We define your best-fit accounts, buying triggers, disqualification rules, and priority segments before outreach begins.</p></div>
+          <div class="card accent"><div class="num">02</div><h3>Better prospect research</h3><p>We use AI-assisted workflows to enrich contacts, find context, and create relevant outreach angles at scale.</p></div>
+          <div class="card accent"><div class="num">03</div><h3>Clear pipeline visibility</h3><p>You see which segments, lists, and messages create replies, meetings, opportunities, and next steps.</p></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="04">
+        <span class="kicker">What you get</span>
+        <h2>A complete outbound system, not just a lead list.</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>Deliverables we create for you</h3>
+            <ul>
+              <li>ICP and offer refinement workshop</li>
+              <li>Target account list and decision-maker database</li>
+              <li>Email enrichment, verification, and segmentation</li>
+              <li>AI-assisted account research workflow</li>
+              <li>Personalized cold email / LinkedIn message angles</li>
+              <li>Campaign setup in your outreach tool</li>
+              <li>Reply handling process, CRM handoff, and reporting dashboard</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Outcomes you should expect</h3>
+            <ul>
+              <li>A repeatable outbound process your team can understand and improve.</li>
+              <li>More confidence in who you are targeting and why.</li>
+              <li>Less manual research work for founders, AEs, and SDRs.</li>
+              <li>Cleaner reporting on what is producing real opportunities.</li>
+              <li>A system you can run with us, hand to your team, or scale later.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="05">
+        <span class="kicker">Who this is for</span>
+        <h2>This is best for B2B teams with a clear offer and meaningful deal value.</h2>
+        <div class="grid two">
+          <div class="card accent"><h3>You are a good fit if</h3><ul><li>You sell B2B services, consulting, recruiting, SaaS, or high-ticket professional services</li><li>You have founder-led or sales-led growth and need more conversations</li><li>Your average customer value can justify outbound investment</li><li>Your team can follow up and close qualified calls</li><li>You want a measurable system, not spam or guesswork</li></ul></div>
+          <div class="card"><h3>This is not a fit if</h3><ul><li>You want guaranteed sales with no sales process</li><li>Your offer is very low-ticket or still unclear</li><li>You want bulk blasting or risky scraping</li><li>Your team cannot respond to interested prospects</li><li>You only want pure pay-per-meeting at the start</li></ul></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="06">
+        <span class="kicker">How we work</span>
+        <h2>Your 4-step outbound engine</h2>
+        <div class="process">
+          <div class="step"><div class="dot">1</div><h3>Define your buyer</h3><p>We clarify your ICP, segments, triggers, qualification rules, and first campaign hypothesis.</p></div>
+          <div class="step"><div class="dot">2</div><h3>Build your list</h3><p>We find accounts, enrich decision makers, verify emails, and prepare CRM-ready prospect data.</p></div>
+          <div class="step"><div class="dot">3</div><h3>Personalize & launch</h3><p>We create message angles, set up sequences, route replies, and launch controlled test batches.</p></div>
+          <div class="step"><div class="dot">4</div><h3>Measure & improve</h3><p>We review replies, bounces, qualified meetings, segment performance, and next campaign decisions.</p></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="07">
+        <span class="kicker">Delivery timeline</span>
+        <h2>What happens in your first 30 days</h2>
+        <div class="timeline">
+          <div class="week"><b>Week 1</b><h3>Strategy & setup</h3><ul><li>ICP workshop</li><li>Tool audit</li><li>Campaign hypothesis</li><li>Asset collection</li></ul></div>
+          <div class="week"><b>Week 2</b><h3>Data & workflow</h3><ul><li>Account list</li><li>Decision-maker enrichment</li><li>Email verification</li><li>CRM fields</li></ul></div>
+          <div class="week"><b>Week 3</b><h3>Messaging & launch</h3><ul><li>Sequences</li><li>Personalization logic</li><li>Outreach setup</li><li>Small test batch</li></ul></div>
+          <div class="week"><b>Week 4</b><h3>Optimize & report</h3><ul><li>Reply review</li><li>Copy refinement</li><li>Targeting improvement</li><li>Next campaign plan</li></ul></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="08">
+        <span class="kicker">Proof & ROI</span>
+        <h2>You get visibility before we try to scale volume.</h2>
+        <div class="grid two">
+          <div class="card dark"><h3>What we can show you</h3><ul><li>Sample workflow screenshots</li><li>Lead research examples</li><li>Campaign logic and targeting criteria</li><li>Personalized outreach examples</li><li>Before/after CRM or list cleanup</li></ul></div>
+          <div class="card"><h3>Why the ROI can make sense</h3><p class="big-quote">If one closed customer is worth thousands, a few better-fit conversations can justify the system.</p><ul><li>Lower dependence on referrals and ads.</li><li>Reduce bad-fit demos and wasted sales time.</li><li>Test segments before hiring SDR headcount.</li></ul></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="09">
+        <span class="kicker">Pricing options</span>
+        <h2>Choose the starting point that matches your current need.</h2>
+        <table aria-label="Pricing comparison table">
+          <thead><tr><th>Option</th><th>Price</th><th>Best for you if</th><th>What you receive</th><th>Timeline</th></tr></thead>
+          <tbody>
+            <tr><td>Beginner / Trust-builder<br><span class="tag">Pipeline Audit</span></td><td><span class="price">$500</span></td><td>You want a low-risk diagnosis before committing to implementation.</td><td>Your ICP review, outbound stack audit, lead source review, deliverability check, CRM leakage review, 3–5 campaign opportunities, and quick-win action plan.</td><td>7 days</td></tr>
+            <tr><td>Core<br><span class="tag">AI Outbound Engine</span></td><td><span class="price">$2,000</span></td><td>You want the system built, launched, and handed over clearly.</td><td>ICP refinement, 500–1,000 researched prospects, enrichment, verification, 2–3 segmented campaigns, AI personalization workflow, campaign setup, and reporting sheet.</td><td>14–21 days</td></tr>
+            <tr><td>Premium<br><span class="tag">Managed AI Pipeline</span></td><td><span class="price">$5,000</span></td><td>You want us to run and improve the outbound engine with you.</td><td>Everything in Core plus monthly prospect sourcing, campaign iterations, weekly optimization, reply triage, CRM updates, dashboard reporting, and qualified meeting handoff process.</td><td>30-day engagement</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="slide" data-slide="10">
+        <span class="kicker">Scope clarity</span>
+        <h2>Clear scope, so you know exactly what you are buying.</h2>
+        <div class="grid two">
+          <div class="card accent"><h3>Included for you</h3><ul><li>Strategy, setup, data workflow, messaging, launch checklist, and reporting</li><li>Approval points before any outreach goes live</li><li>Handoff docs so your system is not a black box</li><li>Weekly optimization in the Premium option</li><li>Recommendations for tools, domains, inboxes, CRM fields, and compliance basics</li></ul></div>
+          <div class="card"><h3>Not included by default</h3><ul><li>Guaranteed sales or guaranteed inbox placement</li><li>Custom enterprise software development</li><li>Cold calling AI voice agents</li><li>Paid ad management</li><li>Tool subscriptions, domains, inboxes, or third-party data credits</li></ul></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="11">
+        <span class="kicker">Add-ons</span>
+        <h2>Add these if you want extra support or volume.</h2>
+        <div class="addons">
+          <div class="addon"><strong>$250</strong><p><b>Extra ICP Segment Pack</b><br>We research one additional buyer segment with trigger logic and messaging angles.</p></div>
+          <div class="addon"><strong>$350</strong><p><b>Deliverability Setup Review</b><br>We review your domain, inbox, SPF/DKIM/DMARC, volume, bounce, and opt-out setup.</p></div>
+          <div class="addon"><strong>$500</strong><p><b>Additional 500 Researched Leads</b><br>We source, enrich, verify, and segment another batch of target accounts and contacts.</p></div>
+          <div class="addon"><strong>$750</strong><p><b>CRM Cleanup & Handoff</b><br>We normalize fields, tags, stages, and reporting views so your sales team can follow up cleanly.</p></div>
+          <div class="addon"><strong>$1,000</strong><p><b>30-Day Optimization Extension</b><br>We review campaigns weekly, refine copy, improve lists, and report performance.</p></div>
+          <div class="addon"><strong>$1,500</strong><p><b>Sales Enablement Pack</b><br>We create objection handling, follow-up templates, a meeting scorecard, and handoff scripts.</p></div>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="12">
+        <span class="kicker">FAQ</span>
+        <h2>Common questions before you start</h2>
+        <div class="faq">
+          <details open><summary>Do you guarantee meetings?</summary><p>No. We guarantee delivery of a researched, measurable outbound system. Meeting volume depends on your offer, market, list quality, deliverability, and sales follow-up.</p></details>
+          <details open><summary>Can you use our existing tools?</summary><p>Yes. We can work with tools such as Apollo, Clay, Instantly, Smartlead, HubSpot, Airtable, or Google Sheets if they fit your workflow.</p></details>
+          <details><summary>Who writes the outreach?</summary><p>We create segmented message angles and sequences. Your team reviews and approves brand-sensitive copy before launch.</p></details>
+          <details><summary>What do you need from us?</summary><p>We need your ICP, offer details, CRM/outreach setup where relevant, sales feedback, and timely approvals.</p></details>
+          <details><summary>What happens after 30 days?</summary><p>You can continue with a managed retainer, run the system internally, or add optimization / lead-volume support.</p></details>
+          <details><summary>Is this only cold email?</summary><p>No. The core system is outbound-first, but the same research and segmentation can support LinkedIn, event follow-up, ABM, and inbound speed-to-lead workflows.</p></details>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="13">
+        <span class="kicker">Next step</span>
+        <h2>Let’s find the fastest path to your next qualified conversations.</h2>
+        <p class="lead">We will review your ICP, current outbound process, tool stack, data quality, and follow-up flow — then recommend the best starting point for your pipeline system.</p>
+        <div class="cta-box">
+          <div>
+            <h3 style="font-size:32px;color:white;margin-bottom:12px">Recommended next step</h3>
+            <p>Book a 30-minute fit call. If the opportunity is clear, you can begin with the $500 Pipeline Audit or move directly into the $2,000 Core buildout.</p>
+          </div>
+          <a class="button" href="mailto:hello@example.com?subject=Pipeline%20Audit%20Request">Book Your Pipeline Audit</a>
+        </div>
+      </article>
+    </section>
+
+    <nav class="controls" aria-label="Deck navigation">
+      <button id="prev" type="button">← Prev</button>
+      <div class="progress" aria-hidden="true"><div class="bar" id="bar"></div></div>
+      <span id="counter">1 / 13</span>
+      <button id="next" type="button">Next →</button>
+      <span class="hint">Use ← → keys</span>
+    </nav>
+  </main>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    const counter = document.getElementById('counter');
+    const bar = document.getElementById('bar');
+    let index = 0;
+
+    function show(i){
+      index = (i + slides.length) % slides.length;
+      slides.forEach((slide, n) => slide.classList.toggle('active', n === index));
+      counter.textContent = `${index + 1} / ${slides.length}`;
+      bar.style.width = `${((index + 1) / slides.length) * 100}%`;
+      document.title = `${index + 1}. AI Outbound Engine — Pitch Deck`;
+    }
+
+    prev.addEventListener('click', () => show(index - 1));
+    next.addEventListener('click', () => show(index + 1));
+    document.addEventListener('keydown', (event) => {
+      if(event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') show(index + 1);
+      if(event.key === 'ArrowLeft' || event.key === 'PageUp') show(index - 1);
+      if(event.key === 'Home') show(0);
+      if(event.key === 'End') show(slides.length - 1);
+    });
+    show(0);
+  </script>
+</body>
+</html>

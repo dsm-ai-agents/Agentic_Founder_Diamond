@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get More B2B Leads in 14 Days</title>
+  <meta name="description" content="Download the free B2B lead generation playbook with outreach, targeting, follow-up templates, and KPI tracker." />
+  <style>
+    :root {
+      --ink: #081c2d;
+      --ink-2: #15324a;
+      --paper: #f6f2e9;
+      --card: #fffaf0;
+      --cyan: #14c8d8;
+      --gold: #ffb84d;
+      --green: #18b982;
+      --muted: #637487;
+      --line: rgba(8, 28, 45, .14);
+      --shadow: 0 30px 90px rgba(8, 28, 45, .18);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 10%, rgba(20,200,216,.18), transparent 28rem),
+        radial-gradient(circle at 86% 14%, rgba(255,184,77,.22), transparent 22rem),
+        linear-gradient(180deg, #f8f5ee 0%, #eef6f7 52%, #f7f1e7 100%);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    .noise {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+
+    header {
+      padding: 26px 0 10px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      color: var(--ink-2);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -.03em;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--ink);
+      border-radius: 12px;
+      background: var(--gold);
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      border-bottom: 2px solid transparent;
+    }
+    .nav a:hover { border-bottom-color: var(--cyan); }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(340px, .75fr);
+      gap: 44px;
+      align-items: center;
+      padding: 58px 0 72px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.58);
+      backdrop-filter: blur(10px);
+      color: var(--ink-2);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .pulse {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 7px rgba(24,185,130,.14);
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 24px 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(46px, 7.8vw, 86px);
+      line-height: .92;
+      letter-spacing: -.075em;
+    }
+
+    .highlight {
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .highlight::after {
+      content: "";
+      position: absolute;
+      left: -.03em;
+      right: -.03em;
+      bottom: .07em;
+      height: .17em;
+      background: var(--cyan);
+      z-index: -1;
+      transform: rotate(-1.5deg);
+      border-radius: 999px;
+      opacity: .72;
+    }
+
+    .subhead {
+      max-width: 680px;
+      margin: 0 0 28px;
+      font-size: clamp(18px, 2vw, 22px);
+      color: var(--ink-2);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 15px;
+      background: var(--ink);
+      color: white;
+      font-weight: 950;
+      text-decoration: none;
+      box-shadow: 7px 7px 0 var(--gold);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover { transform: translate(3px, 3px); box-shadow: 4px 4px 0 var(--gold); }
+
+    .mini-proof {
+      color: var(--muted);
+      font-weight: 750;
+      font-size: 14px;
+    }
+
+    .form-card {
+      position: relative;
+      padding: 24px;
+      border: 2px solid var(--ink);
+      border-radius: 28px;
+      background: rgba(255,250,240,.82);
+      box-shadow: var(--shadow), 10px 10px 0 rgba(8,28,45,.95);
+      backdrop-filter: blur(12px);
+      transform: rotate(1deg);
+    }
+
+    .form-card::before {
+      content: "PDF";
+      position: absolute;
+      top: -18px;
+      right: 22px;
+      padding: 8px 14px;
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+      background: var(--cyan);
+      font-weight: 950;
+      letter-spacing: .08em;
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .cover {
+      margin-bottom: 22px;
+      padding: 22px;
+      min-height: 240px;
+      border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(20,200,216,.9), transparent 45%),
+        radial-gradient(circle at 92% 10%, rgba(255,184,77,.9), transparent 32%),
+        var(--ink);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+    .cover::after {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 40px;
+      right: -40px;
+      bottom: -54px;
+      transform: rotate(18deg);
+    }
+    .cover small { font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.75); }
+    .cover strong { display:block; max-width: 260px; font-family: Georgia, "Times New Roman", serif; font-size: 36px; line-height: .96; letter-spacing: -.06em; }
+    .cover span { color: rgba(255,255,255,.82); font-size: 14px; max-width: 270px; }
+
+    label {
+      display: block;
+      margin: 0 0 7px;
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--ink-2);
+    }
+    input {
+      width: 100%;
+      min-height: 52px;
+      margin-bottom: 14px;
+      padding: 0 15px;
+      border: 1.5px solid var(--line);
+      border-radius: 14px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      outline: none;
+    }
+    input:focus { border-color: var(--cyan); box-shadow: 0 0 0 4px rgba(20,200,216,.16); }
+    .form-card .btn { width: 100%; margin-top: 4px; }
+    .trust { margin: 15px 0 0; color: var(--muted); font-size: 13px; text-align: center; }
+
+    .section { padding: 74px 0; }
+    .section h2 {
+      margin: 0 0 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 4.8vw, 58px);
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+    .section-lede { max-width: 690px; margin: 0 0 34px; color: var(--muted); font-size: 18px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .tile {
+      min-height: 190px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(255,255,255,.66);
+      box-shadow: 0 14px 40px rgba(8,28,45,.06);
+    }
+    .tile:nth-child(2n) { background: rgba(255,248,229,.76); }
+    .tile-number {
+      display: inline-grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      background: var(--ink);
+      color: white;
+      font-weight: 950;
+    }
+    .tile h3 { margin: 0 0 8px; font-size: 19px; letter-spacing: -.02em; }
+    .tile p { margin: 0; color: var(--muted); }
+
+    .who {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+    .panel {
+      padding: 30px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 20px 70px rgba(8,28,45,.08);
+    }
+    .panel.dark {
+      color: white;
+      background: var(--ink);
+      border-color: var(--ink);
+      overflow: hidden;
+      position: relative;
+    }
+    .panel.dark::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(20,200,216,.22);
+      right: -90px;
+      bottom: -100px;
+    }
+    .panel.dark p { color: rgba(255,255,255,.76); }
+    .check-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.66);
+      border: 1px solid var(--line);
+      font-weight: 800;
+    }
+    .check { flex: 0 0 auto; width: 24px; height: 24px; border-radius: 50%; background: var(--green); color: white; display:grid; place-items:center; font-size: 14px; }
+
+    .faq {
+      display: grid;
+      gap: 16px;
+      max-width: 820px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255,255,255,.7);
+      padding: 20px 22px;
+    }
+    summary { cursor: pointer; font-weight: 950; font-size: 18px; }
+    details p { margin: 12px 0 0; color: var(--muted); }
+
+    .final-cta {
+      margin: 50px 0 80px;
+      padding: 36px;
+      border-radius: 32px;
+      color: white;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(20,200,216,.38), transparent 34%),
+        radial-gradient(circle at 88% 0%, rgba(255,184,77,.42), transparent 28%),
+        var(--ink);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 26px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+    .final-cta h2 { margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 4vw, 48px); line-height: 1; letter-spacing: -.055em; }
+    .final-cta p { margin: 0; color: rgba(255,255,255,.75); }
+    .final-cta .btn { background: white; color: var(--ink); box-shadow: 7px 7px 0 var(--cyan); }
+
+    footer { padding: 28px 0 44px; color: var(--muted); font-size: 14px; }
+
+    @media (max-width: 920px) {
+      .hero, .who, .final-cta { grid-template-columns: 1fr; }
+      .form-card { transform: none; }
+      .grid { grid-template-columns: 1fr 1fr; }
+      .final-cta .btn { width: 100%; }
+    }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 26px, 1160px); }
+      header { padding-top: 18px; }
+      .nav a { display: none; }
+      .hero { padding-top: 36px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 47px; }
+      .highlight { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="brand"><span class="brand-mark">↗</span><span>B2B Growth System</span></div>
+      <a href="#download">Download Playbook</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> Free PDF Playbook</div>
+        <h1>Get More <span class="highlight">B2B Leads</span> in 14 Days <br>(Without Hiring a Big Sales Team)</h1>
+        <p class="subhead">Download the free PDF playbook with proven outreach, targeting, and follow-up templates you can deploy immediately.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#download">Download the Free PDF</a>
+          <span class="mini-proof">Target → Message → Follow-up system included</span>
+        </div>
+      </div>
+
+      <aside class="form-card" id="download" aria-label="Download form">
+        <div class="cover">
+          <small>The B2B Lead Generation Playbook</small>
+          <strong>Book more meetings in the next 14 days.</strong>
+          <span>ICP checklist, list setup, outreach templates, follow-up sequence, and KPI tracker.</span>
+        </div>
+        <form>
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" required />
+          <button class="btn" type="submit">Download the Free PDF</button>
+          <p class="trust">We’ll only use your details to share the playbook and relevant updates. No spam.</p>
+        </form>
+      </aside>
+    </section>
+
+    <section class="section wrap">
+      <h2>What you’ll get inside the PDF</h2>
+      <p class="section-lede">A practical outbound operating system: not theory, not generic sales advice — the exact pieces you need to start creating pipeline.</p>
+      <div class="grid">
+        <article class="tile"><span class="tile-number">01</span><h3>3-step B2B lead gen system</h3><p>Target → Message → Follow-up, simplified into a 14-day execution loop.</p></article>
+        <article class="tile"><span class="tile-number">02</span><h3>ICP + lead list checklist</h3><p>Know who to contact, why they fit, and what signals suggest they may buy now.</p></article>
+        <article class="tile"><span class="tile-number">03</span><h3>Cold email templates</h3><p>Plug-and-play email structures for direct outreach and value-first follow-up.</p></article>
+        <article class="tile"><span class="tile-number">04</span><h3>LinkedIn message templates</h3><p>Connection requests and follow-up DMs that avoid pitching too early.</p></article>
+        <article class="tile"><span class="tile-number">05</span><h3>Follow-up sequence</h3><p>What to send on Day 2, Day 4, Day 7, and Day 10.</p></article>
+        <article class="tile"><span class="tile-number">06</span><h3>KPI sheet</h3><p>Track reply rate, positive replies, meetings booked, and cost per meeting.</p></article>
+      </div>
+    </section>
+
+    <section class="section wrap who">
+      <div class="panel dark">
+        <h2>Built for teams that need pipeline now.</h2>
+        <p>This is for operators who want a repeatable outbound system before they spend on a bigger sales team, more tools, or random campaigns.</p>
+      </div>
+      <div class="panel">
+        <ul class="check-list">
+          <li><span class="check">✓</span><span>B2B founders and operators</span></li>
+          <li><span class="check">✓</span><span>Growth and sales teams starting outbound</span></li>
+          <li><span class="check">✓</span><span>Agencies looking to build a repeatable pipeline</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <h2>Small FAQs</h2>
+      <div class="faq">
+        <details open>
+          <summary>Is this really free?</summary>
+          <p>Yes — instant access after you enter your details.</p>
+        </details>
+        <details>
+          <summary>Will you call me?</summary>
+          <p>Only if you request help implementing the system.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="wrap final-cta">
+      <div>
+        <h2>Ready to build your 14-day lead gen system?</h2>
+        <p>Download the playbook and start with the ICP checklist, lead list setup, and first outreach sequence.</p>
+      </div>
+      <a class="btn" href="#download">Download the Free PDF</a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © B2B Growth System. Built for practical outbound execution.
+  </footer>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const button = this.querySelector('button');
+      button.textContent = 'Playbook request captured';
+      button.style.background = '#18b982';
+    });
+  </script>
+</body>
+</html>
