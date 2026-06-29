@@ -651,3 +651,12 @@ Requirements:
 
 do this based on files from this location - kunaal\workspace\OFFERS
 ```
+
+## Prompt 5 - Sales Pitch
+```
+[User attached file: /mnt/d/OneDrive/__DSM_LMS_Courses_New/Level 4 - THE AGENTIC
+FOUNDER/Agentic_Founder_Sales_Script_5JUN2026.pdf]
+based on this document I want you to create a Sales Script as an md file which I can use line by line
+during the sales calls for my B2B lead gen servies - refer to all the files in the kunaal/workspace/OFFERS
+Folder where we have reserarch everthng and store the sales script in this location
+```
