@@ -20,22 +20,23 @@ Likelihood of generating qualified leads
 
 # Prompt 2 : Strategy Document
 ```
+```md
 # SEO Authority & Implementation Agent
 
 ## INPUTS
 
-**Website URL:** [ENTER WEBSITE URL]  
-**Business Name:** [ENTER BUSINESS NAME]  
-**Primary Location:** [CITY / REGION / COUNTRY]  
-**Primary Services:** [LIST SERVICES]  
-**Primary Customer:** [DESCRIBE IDEAL CUSTOMER]  
-**Primary Conversion Goal:** [CALL / LEAD / BOOKING / SALE / QUOTE]  
-**Priority Topic / Category:** [OPTIONAL — e.g. AI Agents, Accounting, Real Estate, Cybersecurity]  
-**Competitors:** [OPTIONAL — ADD 3–5 URLs]  
+- **Website URL:** [ENTER WEBSITE URL]
+- **Business Name:** [ENTER BUSINESS NAME]
+- **Primary Location:** [CITY / REGION / COUNTRY]
+- **Primary Services:** [LIST SERVICES]
+- **Primary Customer:** [DESCRIBE IDEAL CUSTOMER]
+- **Primary Conversion Goal:** [CALL / LEAD / BOOKING / SALE / QUOTE]
+- **Priority Topic / Category:** [OPTIONAL]
+- **Competitors:** [OPTIONAL — ADD 3–5 URLs]
 
 ---
 
-## OBJECTIVE
+# OBJECTIVE
 
 Analyze my existing website and improve it to generate qualified inbound opportunities through SEO.
 
@@ -50,51 +51,55 @@ The goal is to rank for searches where potential customers are already:
 - Requesting quotes
 - Booking consultations
 - Looking for implementation
-- Looking for training/workshops
+- Looking for training or workshops
 - Trying to solve a problem related to my services
 
-Also establish long-term **topical authority** around my main category.
+At the same time, establish long-term topical authority around my core category.
 
-Where you have access to the website/codebase, do not only provide recommendations. **Implement the improvements.**
+If you have access to the website/codebase, do not only provide recommendations.
+
+**Research → Plan → Implement → Verify → Document.**
 
 ---
 
 # STEP 1 — AUDIT THE WEBSITE
 
-Inspect the entire website and codebase.
+Inspect the complete website and codebase before making changes.
 
 Identify:
 
 - Existing pages
-- MD / Markdown / MDX files
+- Markdown / MD / MDX files
 - Service pages
-- Blog/content
-- Page titles
+- Blog/content pages
+- Titles
 - Meta descriptions
 - URLs
 - H1/H2/H3 structure
 - Internal linking
 - Navigation
 - CTAs
-- Schema
+- Schema markup
 - Sitemap
 - robots.txt
-- Canonicals
+- Canonical URLs
 - Image alt text
 - Technical SEO problems
-- Duplicate/thin pages
+- Duplicate pages
+- Thin content
 - Local SEO signals
 - Conversion opportunities
+- Existing ranking themes
 
-Understand what already exists before creating anything new.
+Do not unnecessarily replace content that is already useful.
 
 ---
 
 # STEP 2 — RESEARCH WHAT PEOPLE ACTUALLY SEARCH
 
-Research keywords around my services and location.
+Research what potential customers are already searching for around my services.
 
-Do not rely only on keywords I provide.
+Do not restrict research to the terminology currently used on my website.
 
 Discover variations such as:
 
@@ -104,12 +109,14 @@ Discover variations such as:
 - best [service]
 - top [service]
 - [service] expert
+- [service] specialist
 - [service] consultant
 - [service] agency
 - [service] company
 - [service] provider
 - [service] services
 - [service] implementation
+- [service] solution
 - [service] cost
 - [service] pricing
 - hire [service]
@@ -117,13 +124,28 @@ Discover variations such as:
 - [service] for [problem]
 - local [service]
 
-Also identify terminology that customers use even when they don't know the formal name of my service.
+Also identify searches where customers describe their **problem** instead of the service they need.
+
+Research adjacent terminology that may have higher search volume than the terminology I currently use.
 
 ---
 
-# STEP 3 — FIND THE BIGGEST SEO OPPORTUNITIES
+# STEP 3 — FIND HIGH-BUYING-INTENT KEYWORDS
 
-Do not chase search volume alone.
+Prioritize keywords where the person is likely to:
+
+- Enquire
+- Hire
+- Purchase
+- Request a proposal
+- Request pricing
+- Book a consultation
+- Book a workshop
+- Find a local provider
+- Compare providers
+- Implement a solution
+
+Do not prioritize vanity traffic.
 
 Evaluate opportunities using:
 
@@ -131,108 +153,152 @@ Evaluate opportunities using:
 
 Classify keywords into:
 
-### Tier 1 — Money Keywords
-People actively looking to hire/buy.
+## Tier 1 — Money Keywords
 
-### Tier 2 — Problem/Solution Keywords
-People experiencing a problem my service solves.
+People actively looking to hire or buy.
 
-### Tier 3 — Commercial Research
-People comparing options, pricing, tools or providers.
+## Tier 2 — Problem/Solution Keywords
 
-### Tier 4 — Authority Keywords
-Informational searches that help establish expertise.
+People actively trying to solve a problem my service solves.
 
-### Tier 5 — Emerging Keywords
-Growing categories where SEO competition may still be lower.
+## Tier 3 — Commercial Research Keywords
 
-Highlight categories that may have significantly more search demand than the exact terminology currently used on my website.
+People comparing:
+
+- Providers
+- Solutions
+- Pricing
+- Tools
+- Approaches
+- Alternatives
+
+## Tier 4 — Authority Keywords
+
+Educational searches that help establish topical authority.
+
+## Tier 5 — Emerging Opportunities
+
+New or growing categories where search demand is increasing and SEO competition may still be relatively low.
 
 ---
 
-# STEP 4 — BUILD TOPICAL AUTHORITY
+# STEP 4 — DISCOVER BIGGER SEARCH OPPORTUNITIES
 
-Create topic clusters rather than random blog posts.
+Do not assume that my primary service keyword is the biggest SEO opportunity.
 
-Structure each major topic like:
+Research related categories and terminology.
+
+Look for topics with:
+
+1. Higher search demand
+2. Strong commercial intent
+3. Growing interest
+4. Lower competition
+5. Strong relevance to my services
+6. Potential to establish category authority
+
+Identify opportunities where a broader keyword can bring users into my ecosystem and eventually convert them into customers.
+
+---
+
+# STEP 5 — BUILD TOPICAL AUTHORITY
+
+Do not create random blog posts.
+
+Build structured **topic clusters**.
+
+For each major topic create a structure similar to:
 
 ## Pillar Topic
 
 ### Commercial Pages
-- Service
-- Consulting
-- Implementation
-- Company/provider
-- Training
-- Pricing
+
+- [Topic] Consultant
+- [Topic] Company
+- [Topic] Services
+- [Topic] Implementation
+- [Topic] Training
+- [Topic] Pricing
 
 ### Use Cases
-- Service for Sales
-- Service for Marketing
-- Service for Operations
-- Service for HR
-- Service for Finance
+
+- [Topic] for Sales
+- [Topic] for Marketing
+- [Topic] for Operations
+- [Topic] for Finance
+- [Topic] for HR
+- [Topic] for Customer Service
 
 ### Industries
-- Service for Startups
-- Service for SMBs
-- Service for Enterprises
-- Service for [Relevant Industry]
+
+- [Topic] for Startups
+- [Topic] for SMBs
+- [Topic] for Enterprises
+- [Topic] for [Relevant Industry]
 
 ### Problems
+
 - How to solve [problem]
 - Automate [problem]
 - Improve [outcome]
 - Reduce [pain]
+- Replace [manual process]
 
 ### Authority Content
+
 - What is [topic]?
 - How does [topic] work?
-- Examples
-- Use cases
-- Tools
-- Comparisons
-- Cost
-- ROI
-- Implementation guide
-- Best practices
+- [Topic] examples
+- [Topic] use cases
+- Best [topic] tools
+- [Topic] architecture
+- [Topic] cost
+- [Topic] ROI
+- [Topic] implementation guide
+- [Topic] best practices
+- [Topic] vs [alternative]
 
-Every authority article should support and internally link to relevant commercial pages.
+Every authority article should strengthen relevant commercial pages through internal linking.
 
 ---
 
-# STEP 5 — LOCAL SEO
+# STEP 6 — LOCAL SEO
 
-Build strong relevance for my target location.
+If the business has a local market, build strong local relevance.
 
-Research combinations involving:
+Research:
 
-- Service + City
-- Service + Region
-- Service + Neighborhood
+- [Service] + City
+- [Service] + Region
+- [Service] + Neighborhood
 - Consultant + City
 - Expert + City
 - Company + City
+- Provider + City
 - Training + City
 - Workshop + City
-- Provider + City
 - Near me searches
 
-Identify important commercial areas or neighborhoods where relevant.
+Research both official and commonly used variations of location names.
 
-Do **not** create hundreds of thin location pages.
+Identify relevant:
 
-Only create location pages where meaningful unique content can be provided.
+- Business districts
+- Commercial hubs
+- Technology hubs
+- Nearby cities
+- Important neighborhoods
+
+Do not create hundreds of thin location pages.
+
+Create location pages only where meaningful unique content and genuine business relevance exist.
 
 ---
 
-# STEP 6 — WEBSITE ARCHITECTURE
+# STEP 7 — DESIGN THE SEO WEBSITE ARCHITECTURE
 
-Recommend and implement a clean SEO structure.
+Create a clean architecture such as:
 
-Example:
-
-```text
 /
 ├── services/
 │   ├── primary-service/
@@ -253,78 +319,86 @@ Example:
 ├── case-studies/
 │
 └── about/
-```
 
-Create dedicated pages only when the search intent is sufficiently different.
+Only create dedicated pages when search intent is sufficiently different.
 
 Avoid keyword cannibalization.
 
+Determine which existing page should rank for each major keyword before creating a new page.
+
 ---
 
-# STEP 7 — IMPROVE EXISTING MD / MDX FILES
+# STEP 8 — OPTIMIZE EXISTING MD / MDX FILES
 
-Optimize existing website content first where possible.
+Prefer improving existing pages before creating duplicates.
 
-For each important page improve:
+For each important page optimize:
 
 - SEO title
 - Meta description
-- URL
+- URL/slug
 - H1
-- Opening paragraph
+- Opening section
+- Search intent
 - H2/H3 structure
-- Search intent alignment
 - Related terminology
-- Semantic entities
+- Semantic keywords
+- Relevant entities
 - FAQs
 - Internal links
 - CTA
 - Proof
-- Credibility
+- Testimonials
+- Case studies
 - Location relevance
-- Schema opportunities
+- Structured data opportunities
 
 Write naturally.
 
 Do not keyword stuff.
 
+Content should first be useful to a potential customer while remaining extremely clear to search engines.
+
 ---
 
-# STEP 8 — ESTABLISH AUTHORITY
+# STEP 9 — ESTABLISH REAL AUTHORITY
 
-Improve signals showing why this business/person is credible.
+Improve E-E-A-T and entity authority.
 
-Look for opportunities to add:
+Identify opportunities to demonstrate:
 
+- Experience
+- Expertise
+- Client work
+- Projects completed
+- Customer outcomes
 - Case studies
 - Testimonials
 - Client logos
-- Results
-- Projects completed
-- Experience
 - Certifications
 - Awards
-- Media appearances
 - Speaking engagements
+- Workshops
+- Media appearances
+- Podcast appearances
 - Videos
 - Original research
-- Frameworks
+- Proprietary frameworks
 - Guides
-- Customer outcomes
-- Author pages
-- Expert bio
+- Author profiles
+- Expert biography
 
-Build strong entity association between:
+Build a strong association:
 
-**Person / Company → Service → Location → Expertise**
+**Person / Company → Expertise → Service → Industry → Location**
 
 ---
 
-# STEP 9 — SEO + AEO + GEO
+# STEP 10 — SEO + AEO + GEO
 
-Optimize content for both traditional search engines and AI discovery systems.
+Optimize the website for both traditional search engines and AI discovery platforms.
 
-Consider visibility in:
+Consider visibility across:
 
 - Google
 - Google AI Overviews
@@ -332,68 +406,80 @@ Consider visibility in:
 - Gemini
 - Perplexity
 - Copilot
-- Other AI search engines
+- Other AI search systems
 
-Use content structures that are easy to understand and cite:
+Structure content so AI systems can easily understand and cite it.
+
+Use:
 
 - Clear definitions
-- Short direct answers
+- Direct answers
 - FAQs
-- Comparisons
-- Tables
+- Lists
+- Comparison tables
 - Examples
 - Case studies
-- Statistics with sources
 - Original insights
+- Statistics with credible sources
 - Named frameworks
-- Strong author attribution
+- Author attribution
+- Updated dates where relevant
+- Clear entity relationships
+
+Do not create shallow content purely for AI crawlers.
 
 ---
 
-# STEP 10 — INTERNAL LINKING
+# STEP 11 — INTERNAL LINKING
 
-Create intentional internal links.
+Build intentional internal linking.
 
 Use this model:
 
-```text
 Authority Content
-      ↓
-Solution Page
-      ↓
+↓
+Problem / Solution Page
+↓
 Commercial Service Page
-      ↓
+↓
 Case Study / Proof
-      ↓
+↓
 Conversion
-```
 
-Find orphan pages.
+Identify:
 
-Ensure important commercial pages receive the strongest internal-link support.
+- Orphan pages
+- Weak commercial pages
+- Pages competing for the same keyword
+- Missing contextual links
+
+Give the most strategically important commercial pages the strongest internal-link support.
 
 ---
 
-# STEP 11 — CREATE THE SEO FILES
+# STEP 12 — CREATE AND MAINTAIN SEO FILES
 
-Create and continuously maintain the following Markdown files in the project.
+Create these files in the repository.
 
 ---
 
 ## `SEO-STRATEGY.md`
 
-Document:
+Include:
 
 - Business positioning
-- SEO goals
-- Target audience
-- Main keyword themes
-- Competitor insights
+- SEO objectives
+- Ideal customers
+- Keyword strategy
+- Competitor observations
+- Search opportunity analysis
 - Topical authority strategy
 - Local SEO strategy
 - Website architecture
 - Content clusters
+- Internal linking strategy
 - AEO/GEO strategy
+- Authority-building strategy
 
 ---
 
@@ -401,7 +487,7 @@ Document:
 
 Maintain the keyword universe.
 
-For important keywords record:
+Use a structure such as:
 
 | Keyword | Intent | Topic | Location | Opportunity | Target Page | Priority |
 |---|---|---|---|---|---|---|
@@ -409,127 +495,232 @@ For important keywords record:
 Group keywords into:
 
 - Money keywords
-- Services
+- Service keywords
 - Consulting
-- Training
 - Implementation
+- Training
 - Problems
 - Solutions
 - Industries
 - Local searches
 - Comparison searches
-- Informational authority
+- Authority searches
 - Emerging searches
+
+Do not treat estimated search volume as the only ranking criterion.
 
 ---
 
 ## `SEO-ROADMAP.md`
 
-Create an implementation roadmap.
+Maintain the implementation plan.
 
 Use:
 
-```markdown
 # SEO Implementation Roadmap
 
 ## P0 — Critical
+
 - [ ] Task
 
 ## P1 — Revenue / Money Pages
+
 - [ ] Task
 
 ## P2 — Topical Authority
+
 - [ ] Task
 
 ## P3 — Long-Tail Growth
+
 - [ ] Task
 
 ## P4 — Authority / Backlinks
+
 - [ ] Task
 
 ## Completed
-- [x] Task
-```
 
-Update it after every working session.
+- [x] Completed task
+
+Update this file as work progresses.
 
 ---
 
 ## `SEO-CHANGELOG.md`
 
-Record:
+Document meaningful implementation changes.
 
-```markdown
+Use:
+
 # SEO Changelog
 
 ## YYYY-MM-DD
 
 ### Changed
+
 - Page/file changed
 
 ### Improvement
+
 - What was improved
 
 ### Reason
+
 - SEO/business reason for the change
-```
 
 ---
 
-# STEP 12 — IMPLEMENTATION PRIORITY
+# STEP 13 — IMPLEMENT
 
-Execute work in this order:
+When website/codebase access is available, execute the work.
 
-### Sprint 1
-Audit + keyword research + opportunity analysis.
+Do not stop after producing an audit.
 
-### Sprint 2
-Homepage + highest-value commercial pages.
+Implementation can include:
 
-### Sprint 3
-Main topical authority cluster.
+1. Update existing MD/MDX files
+2. Improve homepage SEO
+3. Improve commercial pages
+4. Create missing high-priority pages
+5. Improve page titles
+6. Improve meta descriptions
+7. Fix headings
+8. Add internal links
+9. Add relevant schema
+10. Improve sitemap
+11. Fix indexing issues
+12. Improve CTAs
+13. Add FAQs where useful
+14. Improve local signals
+15. Add case studies/proof where available
+16. Fix broken links
+17. Fix duplicate metadata
+18. Improve image alt text
+19. Improve technical SEO
+20. Verify the website still builds correctly
 
-### Sprint 4
-Local SEO.
+Do not make destructive changes.
 
-### Sprint 5
-Use-case and industry pages.
+Preserve existing functionality and design unless a change is necessary.
 
-### Sprint 6
-Supporting authority content.
+---
 
-### Sprint 7
-Internal linking + schema + technical SEO.
+# IMPLEMENTATION SPRINTS
 
-### Sprint 8
-Review performance and expand based on search data.
+Work sequentially.
+
+## Sprint 1 — Research
+
+- Audit website
+- Analyze competitors
+- Research keywords
+- Identify search opportunities
+- Build strategy
+- Create SEO Markdown files
+
+## Sprint 2 — Money Pages
+
+Improve:
+
+- Homepage
+- Main service pages
+- Consulting pages
+- Implementation pages
+- High-intent local pages
+
+## Sprint 3 — Primary Topic Cluster
+
+Build deep authority around the most valuable topic/category.
+
+## Sprint 4 — Local SEO
+
+Strengthen location relevance and local commercial searches.
+
+## Sprint 5 — Use Cases & Industries
+
+Create pages targeting valuable customer-specific searches.
+
+## Sprint 6 — Authority Content
+
+Create supporting educational and comparison content.
+
+## Sprint 7 — Technical SEO
+
+Improve:
+
+- Internal linking
+- Schema
+- Metadata
+- Sitemap
+- Canonicals
+- Indexability
+- Performance issues where relevant
+
+## Sprint 8 — Review & Expand
+
+Use available SEO/Search Console/ranking data to identify:
+
+- Queries gaining impressions
+- Pages close to page one
+- New keyword opportunities
+- Cannibalization
+- Content requiring updates
+- New commercial opportunities
 
 ---
 
 # AGENT OPERATING RULES
 
-1. Do not blindly create hundreds of pages.
-2. Prefer improving strong existing pages before duplicating them.
-3. Avoid keyword cannibalization.
-4. Avoid doorway/location spam.
-5. Prioritize qualified leads over vanity traffic.
-6. Research before deciding what pages to build.
-7. Verify that important claims are accurate.
-8. Keep content useful for humans.
-9. Make changes directly when access is available.
-10. Preserve working functionality.
-11. Check the website after changes.
-12. Keep the SEO Markdown files updated.
-13. Mark completed tasks in `SEO-ROADMAP.md`.
-14. Record meaningful changes in `SEO-CHANGELOG.md`.
+1. Research before creating pages.
+2. Do not blindly create hundreds of pages.
+3. Prefer improving existing strong pages.
+4. Avoid duplicate/thin content.
+5. Avoid keyword cannibalization.
+6. Avoid doorway/location spam.
+7. Prioritize qualified leads over traffic.
+8. Prioritize commercial intent.
+9. Keep content useful for humans.
+10. Verify factual claims.
+11. Preserve working functionality.
+12. Make changes directly when access is available.
+13. Verify the website after implementation.
+14. Update `SEO-ROADMAP.md` after every implementation sprint.
+15. Update `SEO-CHANGELOG.md` after meaningful changes.
+16. Never mark a task complete unless it has actually been implemented and verified.
+17. When uncertain what to work on next, choose the task with the highest likely business impact.
 
 ---
 
-# PRIMARY DECISION RULE
+# PRIMARY PRIORITIZATION FORMULA
 
-Whenever choosing the next task, prioritize:
+Use:
 
-**Business Value × Search Demand × Buying Intent × Ranking Opportunity**
+**Business Value × Search Demand × Buying Intent × Ranking Feasibility**
 
-The ultimate goal is to make the website one of the strongest and most authoritative online resources for **[PRIMARY SERVICE/TOPIC] in [TARGET MARKET]**, while converting that visibility into qualified inbound business opportunities.
+Do not optimize for vanity traffic.
+
+---
+
+# FINAL GOAL
+
+Make this website one of the strongest, most authoritative and most commercially useful resources in its market for:
+
+**[PRIMARY SERVICE / TOPIC]**
+
+and its related:
+
+- Services
+- Problems
+- Solutions
+- Use cases
+- Industries
+- Local searches
+- Commercial searches
+- Emerging categories
+
+The ultimate outcome is:
+
+**Search Visibility → Topical Authority → Qualified Traffic → Inbound Leads → Revenue**
+```
 ```
