@@ -20,7 +20,6 @@ Likelihood of generating qualified leads
 
 # Prompt 2 : Strategy Document
 ```
-```md
 # SEO Authority & Implementation Agent
 
 ## INPUTS
@@ -723,4 +722,135 @@ The ultimate outcome is:
 
 **Search Visibility → Topical Authority → Qualified Traffic → Inbound Leads → Revenue**
 ```
+
+# Prompt 3 : Implementation
+```
+# IMPLEMENTATION AGENT
+
+## OBJECTIVE
+
+Take the provided SEO strategy / keyword research and implement it as a **fast, lightweight, multi-page website**, then deploy it.
+
+Do not only give recommendations.
+
+**Build → Verify → Deploy.**
+
+---
+
+# IMPLEMENT
+
+1. Read the SEO strategy / keyword research fully.
+2. Identify the highest-priority pages, keywords, topic clusters, and CTAs.
+3. Build the website using lightweight:
+   - HTML
+   - CSS
+   - Minimal JavaScript only where required
+4. Prefer static pages and avoid unnecessary frameworks or dependencies.
+5. Create pages only where there is distinct search intent.
+6. Apply to every important page:
+   - Unique title
+   - Meta description
+   - Canonical URL
+   - One H1
+   - Proper H2/H3 structure
+   - Search-intent-aligned content
+   - Internal links
+   - Relevant semantic keywords
+   - CTA
+   - Alt text
+   - Breadcrumbs where appropriate
+7. Implement technical SEO:
+   - sitemap.xml
+   - robots.txt
+   - Canonical tags
+   - Open Graph metadata
+   - Organization / Person / LocalBusiness / Service / Breadcrumb schema where relevant
+   - Custom 404
+   - Redirects if required
+8. Build intentional internal linking:
+   - Authority content → Solution page → Service page → Case study/proof → Conversion
+9. Keep performance high:
+   - Minimal JS
+   - Small CSS
+   - Optimized images
+   - Mobile responsive
+   - Semantic HTML
+   - No unnecessary scripts
+10. Verify locally:
+   - All pages load
+   - Navigation works
+   - No broken links
+   - Mobile works
+   - Metadata is correct
+   - Sitemap and robots.txt work
+   - Production build succeeds
+
+---
+
+# GITHUB
+
+If GitHub is available:
+
+1. Create or use the repository.
+2. Initialize Git if needed.
+3. Commit the working website.
+4. Push the complete project to GitHub.
+5. Confirm the latest working version is present.
+
+If GitHub is not available, continue locally. Do not stop the task.
+
+---
+
+# VERCEL DEPLOYMENT
+
+Preferred flow:
+
+Local → GitHub → Vercel
+
+If GitHub is unavailable:
+
+Local → Vercel
+
+Deploy the website to Vercel and configure:
+
+- Production branch
+- Build/output settings
+- Environment variables if required
+- Custom domain if available
+
+---
+
+# LIVE VERIFICATION
+
+After deployment, open and verify the production website.
+
+Check:
+
+- Homepage works
+- Important pages work
+- Navigation works
+- Mobile layout works
+- No broken links
+- No obvious console errors
+- Correct titles and descriptions
+- Correct canonical URLs
+- sitemap.xml works
+- robots.txt works
+- Schema is present
+- HTTPS works
+- CTAs work
+- Forms/WhatsApp/contact links work
+- Production domain is correct
+
+Fix any issues found.
+
+Do not mark the task complete until the live website is working correctly.
+
+---
+
+# COMPLETION RULE
+
+The task is complete only when:
+
+**SEO Strategy → Website Built → Local Verification → GitHub if available → Vercel Deployment → Live Verification**
 ```
