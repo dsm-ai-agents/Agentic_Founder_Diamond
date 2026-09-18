@@ -71,3 +71,50 @@ Provide the output in this format:
    - Include a short “do not do yet” list to prevent premature expansion.
 
 Be decisive, specific, and commercially realistic. Use tables where they make comparisons easier.
+
+
+## Competitive Analysis
+
+Based on the strategy above, map the competitive landscape for our startup.
+
+Identify:
+- Direct competitors, indirect competitors, and “do nothing” alternatives.
+- What each alternative does well, where it falls short, and who it serves.
+- The gaps we can credibly own.
+- Our sharpest differentiation and positioning angle.
+- A simple comparison table: competitor, target customer, pricing approach, strengths, weaknesses, and our advantage.
+- Three ways to explain why a customer should choose us instead.
+
+Prioritize real-world, actionable insight over a long list of companies. Flag anything that needs further research.
+
+
+## Content and Demand Generation Plan
+
+Based on the ideal customer, pain points, offer, and positioning above, create a founder-led content plan designed to generate conversations and leads.
+
+Provide:
+- The 3–5 content themes our audience will care about most.
+- Ten specific post ideas for LinkedIn, X, newsletter, video, or relevant communities.
+- For each idea: hook, key message, format, and call to action.
+- Five short LinkedIn post drafts in our voice: useful, opinionated, and non-generic.
+- Three lead magnets, workshops, audits, or tools we could offer to attract qualified prospects.
+- A simple 30-day publishing and distribution schedule.
+- A recommendation for how founders should turn comments, engagement, and content viewers into sales conversations.
+
+Keep it practical for a small team with limited time and budget.
+
+
+## Sales Outreach Builder
+
+Using the go-to-market strategy above, build an outreach system for our first customers.
+
+Create:
+- A prospecting checklist: company signals, job titles, and keywords to look for.
+- A 3-message cold email sequence.
+- A 3-message LinkedIn outreach sequence.
+- A short discovery-call script focused on uncovering pain, urgency, current alternatives, and budget.
+- A follow-up message for prospects who do not respond.
+- A proposal outline for the recommended initial offer.
+- Suggested success metrics for the first 30 days: outreach volume, replies, meetings, pilots, and revenue.
+
+Make the messages sound human, relevant, and concise—not automated or overly salesy.
