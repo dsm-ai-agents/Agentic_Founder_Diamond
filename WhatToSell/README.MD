@@ -1,120 +1,114 @@
-## Founder Input
+## Founder Profile Input
 
-1. Startup / product name:
-[Fill in]
+Answer briefly and honestly. Bullet points are ideal.
 
-2. What we are building:
-[Fill in — 2–5 bullet points]
+1. **Your background**
+   - What have you studied, worked on, or built?
+   - What roles, companies, or industries have you been part of?
 
-3. Target users or customers:
-[Fill in — who they are, industry, role, company size, geography]
+2. **Your strongest skills**
+   - What are you unusually good at?
+   - Examples: sales, coding, design, operations, marketing, finance, community-building, AI, hiring, product, writing, or leadership.
 
-4. Problem we believe they have:
-[Fill in — 2–5 bullet points]
+3. **Your experience level**
+   - How experienced are you in business, startups, technology, and your chosen industry?
+   - Have you sold anything, managed people, built products, or worked with customers before?
 
-5. Current alternatives or competitors:
-[Fill in]
+4. **Industries and markets you know**
+   - Which industries do you understand deeply or have access to?
+   - Include any specific customer types, job roles, or business models you understand.
 
-6. What makes us different / early proof:
-[Fill in — expertise, insight, traction, technology, customer feedback, etc.]
+5. **Problems you have personally seen**
+   - What recurring frustrations, inefficiencies, or expensive problems have you noticed in your work or life?
+   - What problems have you solved manually before?
+
+6. **What you enjoy doing**
+   - What type of work gives you energy?
+   - What would you be happy doing repeatedly for the next two years?
+   - What do you strongly dislike or want to avoid?
+
+7. **Your network and access**
+   - Who can you easily reach?
+   - Examples: founders, small-business owners, doctors, recruiters, creators, HR leaders, schools, retailers, developers, investors, local businesses, or specific communities.
+
+8. **Resources and constraints**
+   - How much time can you commit each week?
+   - Do you have a co-founder, budget, technical capability, audience, existing customers, or other resources?
+   - What constraints should we account for?
+
+9. **Your ambition**
+   - What outcome do you want: side income, freelance business, agency, venture-scale startup, lifestyle business, or something else?
+   - What income or business target would make this worthwhile?
+
+10. **Early ideas, if any**
+   - List any business, product, service, or problem ideas you are already considering.
+   - It is completely fine to leave this blank.
 
 ---
 
 ## Strategy Prompt
 
-You are a practical startup strategist specializing in early-stage B2B and B2C go-to-market.
+You are a practical startup strategist and business opportunity analyst.
 
-Using the founder input above, develop a focused commercial strategy. Do not give generic startup advice. Make reasonable assumptions where information is missing, label those assumptions clearly, and prioritize concrete recommendations.
+Using the founder profile above, identify business opportunities that match the founder’s strengths, interests, experience, access, and constraints. Do not give generic startup ideas. Prioritize opportunities where the founder has a credible advantage, can reach potential customers quickly, can validate demand cheaply, and has a realistic path to revenue.
+
+Make reasonable assumptions where information is missing and clearly label them.
 
 Provide the output in this format:
 
-1. **Ideal customer profile**
-   - Identify the top 1–3 customer segments to pursue first.
-   - Describe the buyer, end user, influencer, company profile, and buying context.
-   - Rank segments by urgency, ability to pay, ease of reaching them, and likelihood of fast adoption.
+1. **Founder advantage summary**
+   - Summarize the founder’s strongest assets: expertise, credibility, interests, network, skills, and access.
+   - Identify the biggest gaps or risks that could make certain business models difficult.
+   - Recommend the business models best suited to this founder: service, consulting, agency, SaaS, marketplace, education, community, content, ecommerce, or another model.
 
-2. **What we can sell**
-   - Recommend the most compelling initial offers we could sell now.
-   - Include a “minimum viable offer” that may be delivered manually, through services, consulting, implementation, pilot, or a product.
-   - Explain the desired outcome each offer creates for the customer.
+2. **Best opportunity areas**
+   - Suggest the top 3–5 business opportunities or problem spaces this founder should explore.
+   - For each opportunity, explain why it fits the founder specifically.
+   - Rank each by customer pain, ease of reaching customers, willingness to pay, speed to first revenue, competition, and long-term potential.
 
-3. **Customer pain points and buying triggers**
-   - List the most expensive, urgent, and emotionally resonant pain points for each priority segment.
-   - Identify events that make customers actively look for a solution.
-   - Separate “nice to have” problems from “must solve now” problems.
+3. **Recommended opportunity**
+   - Choose the single strongest opportunity to pursue first.
+   - Identify the ideal first customer.
+   - Describe the painful problem they have and why it matters now.
+   - Explain the founder’s unique right to solve it.
 
-4. **Willingness to pay**
-   - Assess what customers are likely to pay for and why.
-   - Suggest realistic pricing models and price ranges: pilot, one-time setup, monthly subscription, usage-based, annual contract, or performance-based.
-   - Recommend a starting price and a higher-value option.
-   - State the assumptions behind pricing and how to validate it through customer conversations.
+4. **What to sell first**
+   - Recommend a specific initial offer that can be sold before building a full product.
+   - This may be a paid audit, service, consulting package, implementation, workshop, pilot, concierge service, or lightweight product.
+   - Define the outcome, deliverables, timeline, and what makes the offer valuable.
 
-5. **Positioning and offer messaging**
-   - Create a clear positioning statement.
-   - Write three value propositions tailored to the strongest customer segment.
-   - Write three short outreach hooks that make a prospect want to reply.
-   - Identify likely objections and concise responses.
+5. **Pricing and willingness to pay**
+   - Explain why this customer would spend money on the offer.
+   - Suggest a realistic starting price, a premium option, and an appropriate pricing model.
+   - State the assumptions behind the pricing and how to test them.
 
-6. **Basic go-to-market strategy**
-   - Recommend the first 2–3 acquisition channels to test.
-   - Explain exactly how to reach prospects through each channel, including who to contact, what to say, and what call to action to use.
-   - Include outbound, partnerships, communities, content, paid acquisition, or founder-led sales only where appropriate.
-   - Give a simple 30-day action plan with weekly priorities.
+6. **Positioning and messaging**
+   - Write a clear positioning statement using this format: “We help [customer] achieve [outcome] without [pain/current alternative].”
+   - Create three value propositions.
+   - Create three concise outreach hooks.
+   - List likely objections and effective responses.
 
-7. **Validation plan**
-   - List the five most important questions to ask potential customers before building further.
-   - Define what evidence would validate or invalidate the idea.
-   - Recommend the fastest experiment to get the first 3–5 paying customers.
+7. **Go-to-market plan**
+   - Recommend the first 2–3 customer-acquisition channels based on the founder’s existing access and strengths.
+   - Explain exactly who to contact, where to find them, what to say, and what action to ask for.
+   - Recommend whether the founder should use direct outreach, warm introductions, partnerships, content, communities, events, or paid marketing.
 
-8. **Strategic recommendation**
-   - Conclude with one focused recommendation: who to sell to first, what exact offer to sell, at what price, and through which channel.
-   - Include a short “do not do yet” list to prevent premature expansion.
+8. **30-day execution plan**
+   - Give a practical weekly plan for the next 30 days.
+   - Include customer research, outreach, conversations, offer testing, pilot sales, and learning goals.
+   - Keep it achievable with the founder’s stated time and resource constraints.
 
-Be decisive, specific, and commercially realistic. Use tables where they make comparisons easier.
+9. **Validation questions**
+   - List the five most important questions to ask potential customers.
+   - Explain what evidence would prove real demand.
+   - Define the fastest path to the first 3–5 paying customers.
 
+10. **Focus recommendation**
+   - Clearly state:
+     - Who to sell to first
+     - What exact offer to sell
+     - What price to start with
+     - Which channel to use first
+     - What to avoid doing for now
 
-## Competitive Analysis
-
-Based on the strategy above, map the competitive landscape for our startup.
-
-Identify:
-- Direct competitors, indirect competitors, and “do nothing” alternatives.
-- What each alternative does well, where it falls short, and who it serves.
-- The gaps we can credibly own.
-- Our sharpest differentiation and positioning angle.
-- A simple comparison table: competitor, target customer, pricing approach, strengths, weaknesses, and our advantage.
-- Three ways to explain why a customer should choose us instead.
-
-Prioritize real-world, actionable insight over a long list of companies. Flag anything that needs further research.
-
-
-## Content and Demand Generation Plan
-
-Based on the ideal customer, pain points, offer, and positioning above, create a founder-led content plan designed to generate conversations and leads.
-
-Provide:
-- The 3–5 content themes our audience will care about most.
-- Ten specific post ideas for LinkedIn, X, newsletter, video, or relevant communities.
-- For each idea: hook, key message, format, and call to action.
-- Five short LinkedIn post drafts in our voice: useful, opinionated, and non-generic.
-- Three lead magnets, workshops, audits, or tools we could offer to attract qualified prospects.
-- A simple 30-day publishing and distribution schedule.
-- A recommendation for how founders should turn comments, engagement, and content viewers into sales conversations.
-
-Keep it practical for a small team with limited time and budget.
-
-
-## Sales Outreach Builder
-
-Using the go-to-market strategy above, build an outreach system for our first customers.
-
-Create:
-- A prospecting checklist: company signals, job titles, and keywords to look for.
-- A 3-message cold email sequence.
-- A 3-message LinkedIn outreach sequence.
-- A short discovery-call script focused on uncovering pain, urgency, current alternatives, and budget.
-- A follow-up message for prospects who do not respond.
-- A proposal outline for the recommended initial offer.
-- Suggested success metrics for the first 30 days: outreach volume, replies, meetings, pilots, and revenue.
-
-Make the messages sound human, relevant, and concise—not automated or overly salesy.
+Be decisive, commercially realistic, and specific to the founder’s profile. Use comparison tables where useful. Focus on paid customer validation rather than building unnecessary features.
